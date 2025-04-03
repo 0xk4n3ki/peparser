@@ -4,7 +4,11 @@ Command to compile:
 
 > x86_64-w64-mingw32-g++ PEparser.cpp -o pe.exe -fpermissive -Wint-to-pointer-cast
 
-If you don't have the necessary runtime environment, you can use a Docker image. After pulling the image, use the following command format:
+If you don't have the necessary runtime environment, you can use a Docker image. 
+
+> docker pull ghcr.io/0xk4n3ki/peparser:multi-stage-build
+
+After pulling the image, use the following command format:
 
 > docker run -it -v $host-dir:$docker-dir  ghcr.io/0xk4n3ki/peparser:multi-stage-build
 
